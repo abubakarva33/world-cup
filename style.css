@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+a,a:hover{
+    text-decoration: none;
+}
+li{
+    text-decoration: none;
+    list-style: none;
+}
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    justify-content: space-around;
+    align-items: center;
+    background: #161616;
+    color: #FFFFFF;
+    padding: 30px 60px 0px;
+}
+.banner-image img{
+    width: 100%;
+    height:100%;
+}
+.banner-info h1{
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 20px;
+}
+.banner-info p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.banner-info a{
+    font-size: 20px;
+    font-weight: 500;
+    background-color: aquamarine;
+    padding: 10px;
+    color: rgb(228, 57, 71);
+}
+.match{
+    display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+}
+.short{
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.short-btn button{
+    padding: 15px;
+    width: 230px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.short-btn{
+    display: flex;
+    flex-direction: column;
+    background-color: #161616;
+    border-radius: 10px;
+}
+.blog{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+.container{
+    background-color: aliceblue;
+    border: 1px solid gray;
+    border-radius: 10px;
+    border-top-left-radius: 30;
+    border-top-right-radius: 30;
+}
+.container img{
+    width: 100%;
+}
+.container h3{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    padding-bottom: 20px;
+}
+.container button{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    margin:20px 0px 15px 0px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.sub-container{
+    margin: 20px 0 20px 20px;
+}
+
+.count-left{
+    display: flex;
+    margin-right: 20px;
+}
+.count-left p{
+    margin-left: 7px;
+}
+.count-right p{
+    margin-left: 7px;
+}
+.count{
+    display: flex;
+    color: rgba(22, 22, 22, 0.7);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.count-right{
+    display: flex;
+}
+.footer{
+    background: #161616;
+    color: #FFFFFF;
+    align-items: center;
+    text-align: center;
+}
+.footer h1{
+    padding: 30px;
+}
+.foot{
+    display: flex;
+    justify-content: space-around;
+
+}
+.foot a{
+    color: #B9B9B9;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+/* media querry */
+
+ @media screen and (max-width:1032px) and (min-width:769px) {
+    .banner-info h1{
+        font-size: 40px;
+        line-height: 40px;
+        padding-bottom: 10px;
+    }
+    .banner-info p{
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+    .banner-info a{
+        font-size: 15px;
+        padding: 5px;
+    }
+    .match{
+        display: block;
+    }
+    .short-btn{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFFFFF;
+    }
+    .blog{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .foot {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+ }
+ @media screen and (max-width:769px)  {
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-info{
+        align-items: center;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .banner-info h1{
+        font-size: 35px;
+        line-height: 40px;
+        padding-bottom: 10px;
+        text-align: center;
+    }
+    .banner-info p{
+        font-size: 10px;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+    .banner-info a{
+        font-size: 15px;
+        padding: 5px;
+    }
+    .match{
+        display: block;
+    }
+    .short-btn{
+        background-color: #FFFFFF;
+        align-items: center;
+    }
+    .blog{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+    }
+ }
